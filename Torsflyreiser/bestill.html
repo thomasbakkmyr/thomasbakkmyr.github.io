@@ -1,0 +1,90 @@
+<!doctype>
+
+<html> 
+
+<head>
+<title> Tors flyreiser </title>
+		<meta charset="utf-8">
+		<style type="text/css"></style>
+		<link rel="icon" 
+      type="image/png" 
+      href="img/icon.png">
+    
+    <style>
+        #bestill {
+            margin-top: 500px;
+        }
+    </style>
+              
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+        
+<body class="body">
+	
+    
+    
+	 <h1 id="overskrift"> Tors flyreiser</h1>   
+    
+    
+<div class="meny">
+                   
+				    <ul>
+					    <li> <a href="Home_01.html">Hjem </a> </li>
+						<li> <a href="bestill.html">Bestill tur </a> </li>			
+						<li> <a href="om_tor.html">Om Tors reiser </a> </li>
+						<li> <a href="kontakt.html">Kontakt oss </a> </li>
+					</ul>
+                   
+</div>
+    <br>
+    
+    <div class="bestilltekst">
+    <h1>    
+    Bestill  
+    </h1>
+    
+    </div>
+    
+    
+    
+    <center>
+    <h2 id="bestill">
+    <p>Navn, email, og tlf nr. på referanseperson.<br>
+        <input id = "navn1" name="Fullname" type="text"><br/><br>
+    
+      
+    Dato og antall personer.<br>
+    Husk alder på personer.<br>
+        <textarea id="melding1" rows="4" cols="50"></textarea>
+      
+      <button id= "knapp1" type="button">Send inn</button>
+                        
+                        <div id="kommentarer"></div>
+        </h2>
+    
+    
+    </center>
+    
+    
+    
+    
+    <script>
+    var navn1, omraade1, email1, kjoenn1;
+        
+    function kommentarer1() {
+        navn1 = document.getElementById("navn1").value;
+        melding1 = document.getElementById("melding1").value;
+        
+        document.getElementById("kommentarer").innerHTML = 
+            document.getElementById("kommentarer").innerHTML + 
+            "<div style=\"color:red; font-wight:bold\">" + navn1 + "</div>" + "<br>"+
+            melding1;
+    }
+        document.getElementById("knapp1").addEventListener("click", kommentarer1);
+    </script>
+
+</body>
+</html>

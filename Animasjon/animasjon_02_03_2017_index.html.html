@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person-Klassen</title>
+    
+</head>
+<body>
+    <script>
+    class Person{
+        constructor (fornavn, etternavn, fodselsaar, kjonn){
+            this.fornavn = fornavn;
+            this.etternavn = etternavn;
+            this.fodselsaar = fodselsaar;
+            this.kjonn = kjonn;
+            }
+        
+        velkommen(){
+            document.write("Velkommen " + this.fornavn + "<br>");
+        }
+        
+        visPerson(){
+            document.write("Dette er " + this.fornavn + " " + this.etternavn + ", en " + this.kjonn + ", født i " + this.fodselsaar)
+        }
+    }
+        let karlarne = new Person("Karl Arne", "Dalsaune", 1983, "Mann");
+      
+        karlarne.velkommen();
+        karlarne.visPerson();
+    </script>
+</body>
